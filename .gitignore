@@ -1,0 +1,6 @@
+# No node module folders
+*/node_modules
+node_modules
+
+# No package lock
+*/package-lock.json

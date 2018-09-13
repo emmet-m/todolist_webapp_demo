@@ -1,0 +1,9 @@
+{
+  "name": "frontend",
+  "main": "index.js",
+  "dependencies": {
+    "@angular/cli": "^6.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {}
+}

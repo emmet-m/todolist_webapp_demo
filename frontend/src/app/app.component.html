@@ -4,11 +4,11 @@
     Welcome to {{ title }}!
   </h1>
 
-  <app-list-item *ngFor="let t of tasks" [task]="t"
-    (click)="removeTask(t)">
+  <ul>
+    <app-list-item *ngFor='let t of tasks' [task]="t">
     </app-list-item>
+  </ul>
 
   <input #newTask (keyup.enter)="addTask(newTask.value); newTask.value = ''">
-
   <button (click)="addTask(newTask.value); newTask.value = ''">Add</button>
 </div>

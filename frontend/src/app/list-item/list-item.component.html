@@ -1,1 +1,2 @@
-<li>{{ task }}</li>
+<li [class.completed]="completed"
+(click)='this.completed = !this.completed;'>{{ task }}</li>

@@ -25,3 +25,8 @@ ng serve --open
 ```
 
 This will take some time (7+ seconds), so let Angular do its thing!
+
+
+## A good light reading:
+
+https://www.techiediaries.com/angular-tutorial/

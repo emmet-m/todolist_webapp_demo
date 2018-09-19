@@ -7,10 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ListItemComponent implements OnInit {
 
-  // If we wanted to do a binding, we would use this
+  // @Input enables us to bind values into this variable
   @Input() task: string;
 
-  public completed: boolean;
+  // Is this task completed?
+  public isCompleted: boolean;
 
   // Doesn't do anything here
   constructor() {}
@@ -18,6 +19,6 @@ export class ListItemComponent implements OnInit {
   // Will be run once, for initialisation if we choose not to use
   // A constructor
   ngOnInit() {
-    this.completed = false;
+    this.isCompleted = false;
   }
 }

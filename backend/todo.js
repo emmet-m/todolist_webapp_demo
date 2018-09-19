@@ -1,10 +1,12 @@
 const Express = require('express');
 const BodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = Express();
+app.use(cors());
 app.use(BodyParser.json());
 
-let todos = {};
+let todos = { 1: {"value": "Do angular tutorial"},  2: {"value": "Get lunch"},  3: {"value": "Relax"} };
 let maxId = 0;
 
 app.get("/", (req, res) => {

@@ -1,5 +1,8 @@
-h1 {
+html {
   color: #733;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
   font-size: 250%;
 }

@@ -1,2 +1,8 @@
-<li [class.completed]="completed"
-(click)='this.completed = !this.completed;'>{{ task }}</li>
+<!--
+     The 'completed' class only gets applied to this ListItem
+        if 'isCompleted' is true.
+     When clicked, toggles the isCompleted variable
+     Uses the input variable 'task' as it's contents
+-->
+<li [class.completed]="isCompleted"
+  (click)='this.isCompleted = !this.isCompleted;'>{{ task }}</li>

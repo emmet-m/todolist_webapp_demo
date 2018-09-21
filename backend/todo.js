@@ -10,7 +10,7 @@ let todos = {
     1: {
         "id": 1,
         "title": "Get fish",
-        "content": "Get that fish!!!!",
+        "body": "Get that fish!!!!",
         "isDone": false
     }
 };

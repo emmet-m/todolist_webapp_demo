@@ -16,6 +16,9 @@ export class ListItemComponent implements OnInit {
   // Doesn't do anything here
   constructor() {}
 
+  // TODO: Create a method to 'complete' a task when it's clicked.
+  // You will have to have more input fields in this class to do that...
+
   // Will be run once, for initialisation if we choose not to use
   // A constructor
   ngOnInit() {

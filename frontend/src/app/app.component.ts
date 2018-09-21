@@ -15,6 +15,7 @@ export class AppComponent {
 
   // A title!
   public title = 'My todo list!';
+
   // A list of starter tasks
   public tasks: Array<object> = [];
 
@@ -24,7 +25,19 @@ export class AppComponent {
 
   // Add an task to our task list
   addTask(newTask: string) {
-    this.tasks.push({"id": null, "value": newTask});
+    // TODO: Most of these fields aren't utilised yet.
+    // Create extra form fields so you can fill them in!
+    this.tasks.push(
+      {
+        "id": null,
+        "body": newTask,
+        "title": null,
+        "isDone": false
+      }
+    );
+
+    // TODO: Send a POST request to the backend creating the new task,
+    //  then add the new task to the task list
   }
 
   // Remove a tast from our list
@@ -34,6 +47,7 @@ export class AppComponent {
     if (index === -1) return;
     // Remove found task
     this.tasks.splice(index,1);
+    // TODO: Create a backend endpoint to enable this functionality
   }
 
   // Fetches a task from the server

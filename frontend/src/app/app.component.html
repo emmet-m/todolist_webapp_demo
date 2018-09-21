@@ -12,7 +12,7 @@
       Loop over every item in our tasks array, and create a new ListItem
         component using the value of the task.
     -->
-    <app-list-item *ngFor='let t of tasks' [task]="t.value">
+    <app-list-item *ngFor='let t of tasks' [task]="t.body">
     </app-list-item>
   </ul>
 
@@ -22,7 +22,7 @@
         the value in the textbox and reset the contents inside the text box.
   -->
   <input #newTask (keyup.enter)="addTask(newTask.value); newTask.value = ''">
-  
+
   <!--
       As above, but this button performs the same actuon when clicked.
   -->

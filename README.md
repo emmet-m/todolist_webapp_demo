@@ -21,6 +21,8 @@ We want to define a *specification* of what the access points of our *backend se
 3. Increase the team's understanding of the project before you begin
 4. Allow everyone to confirm that what they are intending on building is the same as the rest of the team (no miscommunication of goals)
 
+You can find an example for this application [here](https://docs.google.com/document/d/1e0zsRjAvVJC1WpoT3IgeGncO4QWLD4_eu0cvnXkjI8g/edit?usp=sharing).
+
 ## Frontend
 
 Check the `README.md` in the `frontend` folder!

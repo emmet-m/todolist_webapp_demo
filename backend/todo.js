@@ -6,7 +6,14 @@ const app = Express();
 app.use(cors());
 app.use(BodyParser.json());
 
-let todos = { 1: {"value": "Do angular tutorial"},  2: {"value": "Get lunch"},  3: {"value": "Relax"} };
+let todos = {
+    1: {
+        "id": 1,
+        "title": "Get fish",
+        "content": "Get that fish!!!!",
+        "isDone": false
+    }
+};
 let maxId = 0;
 
 app.get("/", (req, res) => {

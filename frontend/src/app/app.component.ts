@@ -56,7 +56,6 @@ export class AppComponent {
       // With our response object, push it into our tasks with it's
       // ID and value.
       (resp: object) => {
-        console.log(resp);
         this.tasks.push({"id": task, "body": resp["body"]});
       }
     );

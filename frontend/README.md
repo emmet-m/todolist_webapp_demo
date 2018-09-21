@@ -26,6 +26,28 @@ ng serve --open
 
 This will take some time (7+ seconds), so let Angular do its thing!
 
+## Frontend structure
+
+The frontend folder structure looks like this:
+
+```
+src/
+    index.html
+    styles.css
+    app/
+        app.module.ts
+        app.component.ts
+        app.component.css
+        app.component.html
+        list-item/
+            app.module.ts
+            list-item.component.ts
+            list-item.component.css
+            list-item.component.html
+```
+
+Here we only display the most important files to the project. Have a look around for some other interesting files!
+
 
 ## A good light reading:
 
